@@ -3,14 +3,13 @@
 
 <div class="row">
   <div class="col">
-    <app-personajes [personajes]="personajes"> </app-personajes>
+    <app-personajes> </app-personajes>
   </div>
 
   <div class="col">
     <!-- El evento emitido en onNuevoPersonaje se ha definido en el componente hijo -->
     <app-agregar
       [nuevo]="nuevo"
-      (onNuevoPersonaje)="agregarNuevoPersonaje($event)"
     ></app-agregar>
   </div>
 </div>
