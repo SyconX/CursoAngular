@@ -1,0 +1,23 @@
+<h3>Agregar</h3>
+<hr />
+<form (ngSubmit)="agregar()">
+  <!-- Atributo entre [ ] indica que se le pasa un valor del componente
+       -->
+  <!-- ( ) emite un valor, [ ] establece -->
+  <!-- $event pasa el evento sobre el que se lanza la función -->
+  <!-- [value] = "nuevo.nombre"
+        (input)="cambiarNombre($event)" -->
+  <input
+    type="text"
+    placeholder="Nombre"
+    name="nombre"
+    [(ngModel)]="nuevo.nombre"
+  />
+  <input
+    type="number"
+    placeholder="Poder"
+    name="poder"
+    [(ngModel)]="nuevo.poder"
+  />
+  <button type="submit">Agregar</button>
+</form>
